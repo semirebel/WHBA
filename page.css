@@ -1,0 +1,104 @@
+/* Style the header */
+    .header {
+    background-image: url(bodytopbg.png);
+    height: 50px; 
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    }
+
+/* Create three unequal columns that floats next to each other */
+    .column {
+    float: left;
+    padding: 10px;
+    }
+
+/* Left and right column */
+    .column.side {
+    width: 5%;
+    margin-top: 10px;
+    text-align: center;
+    }
+
+/* Middle column */
+    .column.middle {
+    width: 90%;
+    margin-top: 6px;
+    }
+
+/* Clear floats after the columns */
+    .row::after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+
+/* bio page flex set */
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  background-color: rgb(255,255,255);
+}
+
+.flex-container-d1 {
+  background-color: rgb(255,255,255);
+  width: 30%;
+  margin: 0px;
+  text-align: left;
+  line-height: 75px;
+}
+
+.flex-container-d2 {
+  background-color: rgb(255,255,255);
+  width: 60%;
+  margin-top: 60px;
+  margin-left: 35px;
+  text-align: left;
+  te
+}
+
+/* text Font */
+    .namestyle{
+        font-family: Geneva, Verdana, sans-serif;
+        font-weight: normal;
+        font-size: 25px;
+    }
+
+    .t-style{
+        font-family: Geneva, Verdana, sans-serif;
+        font-weight: bold;
+        font-size: 22px;
+        margin-top: 30px;
+    }
+
+    .p-style{
+        font-family: Geneva, Verdana, sans-serif;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 40px;
+    }
+
+
+/* button stlye*/
+.button {
+  background-color: #fff;
+  border: 0px;
+  color: white;
+  padding: 12px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 22px;
+  margin-top: 6px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.buttonarrow {
+  background-color: #fff;
+  color: black;
+  border: 0px solid #e7e7e7;
+}
+
+.buttonarrow:hover {color: rgb(41, 161, 180);}

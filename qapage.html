@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <mata name="viewport" cotet="width=device-width, intial-scale=1.0"/>
+        <meta charset="utf-8"/>
+        <title>Sammi Chen</title>
+        <link rel="stylesheet" type="text/css" href="page.css"/>
+
+        <style>
+        * {box-sizing: border-box;}
+
+        body {margin: 0;}
+
+        /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+        .column.side, .column.middle {
+            width: 100%;
+        }
+        }
+        </style>
+    </head>
+
+    <body>
+        <div class="header">
+        </div>
+
+        <div class="row">
+            <div class="column side">
+                <button onclick="if (page>0){
+                        page=page-1
+                        console.log(page)
+                        nextqa()
+                        }"           
+                    class="button buttonarrow"
+                >◀</button>
+            </div>
+            
+            
+            <div class="column middle">
+                <p id="qapage"></p>
+                
+            </div>
+            
+            <div class="column side">
+            <button onclick="if (page<8){
+                        page=page+1
+                        console.log(page)
+                        nextqa()
+                        }"
+                class="button buttonarrow"
+            >▶</button>
+            </div>
+        </div>
+        <script>
+            let page=1
+            nextqa()
+
+            function nextqa(){
+            if (page<=0){
+                window.location.href = "bio.html"
+                }
+            else if (page==1){
+                let text = "<h2>個人簡介和申請動機：</h2>"
+                text += "我過去從事的工作都是門市銷售相關。</br></br>歷經產後二度就業，深感自己對於門市一線人員的工作型態熱忱已逝。也意識到自身欠缺其他專業技術能創造自己的不可取代性。</br></br>更希望自己未來的工作是有機會轉換至海外就業並提升收入水平，加上自己對程式語法也有些興趣，故希望有新的專業。"
+                document.getElementById("qapage").innerHTML = text;
+                console.log('page1')
+                }
+            else if(page==2){
+                let text = "<h2>曾經做過哪些軟體工程技術相關的學習？若有作品請分享給我們</h2>"
+                text += "大學就讀「視覺傳達設計系」。</br></br>當時的網頁設計課程有教到網頁製作切版，但主要是學習設計好的網頁畫面該如何分區切版，並沒有真正直接學習到軟體工程。</br></br>其餘經驗則是求學時期學校有提供製作網頁的軟體，單純點擊對應項目即可製成網頁；以及部落格盛行的時期，透過簡單語法改改顏色、背景、版面設定等。</br></br>完全是門外漢等級🤣</br></br>當時也完全沒想過要保留這些檔案...</br>"
+                document.getElementById("qapage").innerHTML = text;
+                console.log('page2')
+                }
+            else if(page==3){
+                let text = "<h2>如果參與這個訓練，會怎麼安排學習時間？</h2>"
+                text += "其實從年初就在尋覓軟體工程的教學管道。</br>本來是想利用工作閒暇時間進修但，其實也擔憂自己的體力是否能應付。</br></br>剛好近期有離職的打算，本來已準備另謀高就，但聽過本屆說明會後體認到還是需要抽出時間、專心學習才有最大學習效益。</br> </br>故順勢先暫緩謀取新職，目前已向公司提出轉換成兼職，讓公司有時間填補人力空缺。</br></br>排班次數會逐漸遞減，讓自己有足夠的時間吸收消化以維持學習成效。"
+                document.getElementById("qapage").innerHTML = text;
+                console.log('page3')
+                }
+            else if(page==4){
+                let text = "<h2>請簡述對於軟體工程的領域偏好和職涯想像。</h2>"
+                text += "自己猜想應該是公司系統出狀況或同仁不知道如何設定，工程師需要協助指導及排除狀況。或者公司系統需要什麼功能，由工程師協助建立之類的。</br></br>自己對於工程相關職務環境，最終希望能達到Work from everywhere.</br></br>雖然不知道這個模式在台灣職場可不可行，但就算不可行，收入也至少能比單純做門市人員可觀，也較有其他發展空間。</br></br>未來若能有機會往海外發展就更理想了。"
+                document.getElementById("qapage").innerHTML = text;
+                console.log('page4')
+                }
+            else if(page==5){
+                let text = "<h2>請描述一件產生明顯負面情緒的經歷，如何處理該情緒？</h2>"
+                text += "照著主管指示做事，事後又被主管質問為什麼這樣做？</br></br>主管不記得自己的要求，布達事項頻繁更動卻不願意留文字檔，常常死無對證。</br></br>被罵得莫名其妙的時候，當下常常來不及反應，事後回想才覺得我好像不該這樣被罵唉？</br></br>但既然當下反應不過來，事後覺得也好，至少沒有太直接反應進而起衝突。畢竟說起來其實也不是什麼很嚴重的大事，只是心情會有點啊雜。</br></br>但其實這也是主管自己在管理及經營上的課題，我也沒有必要拿別人的失誤懲罰自己，稍微跟親友坦承並正視一下自己的心情，然後就讓事情過去就好了。</br></br>放眼未來專注充實自己的人生比較重要。"
+                document.getElementById("qapage").innerHTML = text;
+                console.log('page5')
+                }
+            else if(page==6){
+                let text = "<h2>關於這份申請網頁，分享一個開發時的技術心得：</h2>"
+                text += "在嘗試使用display: flex讓排版並列時，雖然成功讓排版橫行並列了，但調整欄位寬度的部分使用百分比卻一直調整無法成功，畫面上一直沒有出現變化，用數字調整px也一直失敗。</br></br>耗了兩小時最後只好改從W3網站上找其他css語法來達成想達到的效果；製作換頁按鈕時，按鈕的判斷式跑完之後，也一直無法跟底部javasscript判斷式聯動，反覆看教學網站跟W3查詢都未解，最後問了Gemini才得到解答。</br></br>上述情況都讓我認知到自己在語法邏輯上仍有未清楚的部分，自學也未必每次都能順利找到答案，果然還是需要有人討論QQ</br></br>目前也還有很多語法應用上的觀念需要釐清。"
+                document.getElementById("qapage").innerHTML = text;                
+                console.log('page6')
+                }
+            else if(page==7){
+                let text = "<h2>如何看待人工智慧的發展對軟體工程師的影響？</h2>"
+                text += "自己使用Ai的經驗，其實覺得Ai的準確率只有五成，並且常常邏輯打架。</br></br>由於自己不是軟體工程出身，在製作excel表格或設定智能家電統合知道的狀況會詢問Ai設定步驟，但Ai提供的方案常常無法正確執行，也經常有照著嘗試方案A、B、C都失敗之後，Ai又換個說法要我嘗試方案A⋯非常浪費時間。</br>還不如直接自己搜尋網頁⋯</br></br>我認為Ai是在你完全無經驗時，能開拓你視野讓你有”新知”的快速管道。但若要利用Ai強化自己的工作效率，還是要對於Ai的架構，或想詢問的領域已有充分的認知與了解，才有辦法正確提問進而獲得較精確的答案。</br></br>因此，當軟體工程師已有深厚的技術時，Ai想必能成為很方便的幫手。"
+                document.getElementById("qapage").innerHTML = text;
+                console.log('page7')
+                }
+            else if(page>=8){
+                let text = "<h2>其他想要對我們說的事情？</h2>"
+                text += "本來以為製作網頁時間很充裕，實做之後才發現熟悉語法是一件非常耗時的事。</br></br>在不熟悉的情況下，常常為了調整一個語法不知不覺就花掉1-3小時，完全可以理解為什麼會建議需要每週花60小時左右學習。"
+                document.getElementById("qapage").innerHTML = text;
+                console.log('page8')
+                }
+            }  
+        </script>
+        
+    </body>
+</html>

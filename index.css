@@ -1,0 +1,15 @@
+.text{
+    color:rgb(0, 0, 0);
+}
+
+.bgp{
+    background-image: url(bodytopbg.png);
+    flex:none;
+    wight:100%
+    }
+
+.bgw{
+    background-color: rgb(255, 255, 255);
+    height: 50px;
+    }
+
